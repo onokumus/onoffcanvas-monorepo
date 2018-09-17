@@ -7,6 +7,12 @@
     "packages/*"
   ],
   "devDependencies": {
-    "lerna": "^3.4.0"
+    "@types/node":"^10.10.1",
+    "lerna": "^3.4.0",
+    "rollup": "^0.66.0",
+    "rollup-plugin-commonjs": "^9.1.6",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-typescript": "^1.0.0",
+    "typescript": "^3.0.3"
   }
 }

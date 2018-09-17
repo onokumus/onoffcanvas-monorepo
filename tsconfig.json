@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "target": "esnext",
+      "module": "esnext",
+      "moduleResolution": "node",
+      "allowSyntheticDefaultImports":true,
+      "esModuleInterop": true,
+      "noImplicitAny":false,
+      "lib": [
+        "dom",
+        "esnext"
+      ],
+      "jsx": "react",
+      "importHelpers": true,
+      "declaration": true,
+      "composite": true,
+      "baseUrl": "./packages",
+      "paths": {
+        "@onoffcanvas/*": ["./*/src"]
+      },
+      "typeRoots": [
+        "node_modules/@types"
+      ]
+    }
+  }

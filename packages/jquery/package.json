@@ -1,0 +1,42 @@
+{
+  "name": "@onoffcanvas/jquery",
+  "version": "0.0.0",
+  "description": "onoffcanvas jQuery package",
+  "keywords": [
+    "offcanvas",
+    "onoffcanvas",
+    "jquery",
+    "typescript"
+  ],
+  "author": "onokumus <onokumus@gmail.com> (https://github.com/onokumus)",
+  "license": "MIT",
+  "main": "lib/cjs/index.js",
+  "esnext": "lib/esnext/index.js",
+  "module": "lib/modules/index.js",
+  "browser": "dist/onoffcanvas.js",
+  "types": "lib/types/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onokumus/onoffcanvas-monorepo.git"
+  },
+  "scripts": {
+    "clean":"rimraf dist lib",
+    "compile": "rollup -c",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/onokumus/onoffcanvas-monorepo/issues"
+  },
+  "homepage": "https://github.com/onokumus/onoffcanvas-monorepo#readme"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "onoffcanvas-monorepo",
+  "private": true,
+  "author": "onokumus <onokumus@gmail.com> (https://github.com/onokumus)",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.4.0"
+  }
+}

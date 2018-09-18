@@ -13,20 +13,15 @@ const banner = `/*!
 
 export default [
   {
-    input: [
-      "./src/interface.ts",
-      "./src/constants.ts",
-      "./src/util.ts",
-      "./src/index.ts",
-    ],
+    input: "./src/index.ts",
     output: [
       {
-        dir: "lib/modules",
+        file: pkg.module,
         format: "esm",
         banner,
       },
       {
-        dir: "lib/cjs",
+        file: pkg.main,
         format: "cjs",
         banner,
       },

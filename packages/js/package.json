@@ -1,6 +1,6 @@
 {
   "name": "@onoffcanvas/js",
-  "version": "0.0.0",
+  "version": "0.0.1-alpha.0",
   "description": "onoffcanvas vanillaJs package",
   "keywords": [
     "offcanvas",
@@ -31,9 +31,9 @@
     "url": "git+https://github.com/onokumus/onoffcanvas-monorepo.git"
   },
   "scripts": {
-    "clean":"rimraf dist lib src/**/{*.d.ts,*.js}",
+    "clean": "rimraf dist lib src/**/{*.d.ts,*.js}",
     "compile": "rollup -c",
-    "lint":"tslint -c tslint.json src/**/*.ts",
+    "lint": "tslint -c tslint.json src/**/*.ts",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
@@ -41,7 +41,7 @@
   },
   "homepage": "https://github.com/onokumus/onoffcanvas-monorepo#readme",
   "dependencies": {
-    "@types/node": "^10.10.1",
-    "@onoffcanvas/core": "^0.0.0"
+    "@onoffcanvas/core": "^0.0.1-alpha.0",
+    "@types/node": "^10.10.1"
   }
 }

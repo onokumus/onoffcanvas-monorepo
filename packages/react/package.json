@@ -31,7 +31,7 @@
     "url": "git+https://github.com/onokumus/onoffcanvas-monorepo.git"
   },
   "scripts": {
-    "clean": "rimraf dist lib",
+    "clean": "rimraf dist lib src/**/{*.d.ts,*.js}",
     "compile": "rollup -c",
     "lint": "tslint -c tslint.json src/**/*.ts",
     "test": "echo \"Error: run tests from root\" && exit 1"
@@ -41,8 +41,8 @@
   },
   "homepage": "https://github.com/onokumus/onoffcanvas-monorepo#readme",
   "dependencies": {
-    "@types/node": "^10.10.1",
     "@onoffcanvas/core": "^0.0.0",
+    "@types/node": "^10.10.1",
     "classnames": "^2.2.6",
     "tslib": "^1.9.3"
   },
@@ -51,6 +51,7 @@
     "react-dom": "^16.5.1"
   },
   "devDependencies": {
+    "@types/classnames": "^2.2.6",
     "@types/react": "^16.4.14",
     "@types/react-dom": "^16.0.7",
     "react": "^16.5.1",

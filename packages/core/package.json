@@ -28,7 +28,7 @@
     "url": "git+https://github.com/onokumus/onoffcanvas-monorepo.git"
   },
   "scripts": {
-    "clean":"rimraf dist lib",
+    "clean":"rimraf dist lib src/**/{*.d.ts,*.js}",
     "compile": "rollup -c",
     "lint":"tslint -c tslint.json src/**/*.ts",
     "test": "echo \"Error: run tests from root\" && exit 1"

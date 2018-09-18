@@ -4,6 +4,9 @@
   "author": "onokumus <onokumus@gmail.com> (https://github.com/onokumus)",
   "license": "MIT",
   "scripts": {
+    "compile": "lerna run compile",
+    "compile:esnext": "tsc -b packages/*",
+    "clean": "lerna run --parallel  clean",
     "lint": "lerna run --parallel lint"
   },
   "workspaces": [

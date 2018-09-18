@@ -5,6 +5,9 @@
     "outDir": "lib/esnext",
     "declarationDir": "lib/types"
   },
+  "include": [
+    "src/**/*"
+  ],
   "references": [
     { "path": "../core" }
   ]

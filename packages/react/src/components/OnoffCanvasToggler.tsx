@@ -13,14 +13,14 @@ export class OnoffCanvasToggler extends React.PureComponent<
 > {
   public static defaultProps: IOnoffCanvasTogglerProps = {
     isAnimated: false,
-    isOpen: false,
+    isOpen: false
   };
   public render() {
     const { className, isAnimated, isOpen, children, ...rest } = this.props;
     const classes = classNames(
       "onoffcanvas-toggler",
       isAnimated && "is-animated",
-      className,
+      className
     );
     return (
       <button

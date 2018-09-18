@@ -1,4 +1,4 @@
 export interface IOCDefault {
-    createDrawer?: boolean;
-    hideByEsc?: boolean;
+  createDrawer?: boolean;
+  hideByEsc?: boolean;
 }

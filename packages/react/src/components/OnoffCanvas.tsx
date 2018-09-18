@@ -9,7 +9,7 @@ export interface IOnoffCanvasProps extends IProps {
 
 export class OnoffCanvas extends React.PureComponent<IOnoffCanvasProps, {}> {
   public static defaultProps: IOnoffCanvasProps = {
-    isOpen: false,
+    isOpen: false
   };
   public props: any;
 

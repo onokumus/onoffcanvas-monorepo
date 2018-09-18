@@ -29,7 +29,7 @@ export default [
     plugins: [
       typescript({
         typescript: require("typescript"),
-        target: "ES5"
+        target: "es5"
       })
     ],
     experimentalCodeSplitting: true

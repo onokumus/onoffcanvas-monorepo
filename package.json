@@ -10,7 +10,8 @@
     "compile:esnext": "tsc -b packages/*",
     "css": "lerna run css",
     "clean": "lerna run --parallel  clean",
-    "lint": "lerna run --parallel lint"
+    "lint": "lerna run --parallel lint",
+    "deploy": "gh-pages -d site"
   },
   "workspaces": [
     "packages/*"
@@ -29,6 +30,7 @@
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.15.0",
     "tslint-plugin-prettier": "^2.0.0",
-    "typescript": "^3.0.3"
+    "typescript": "^3.0.3",
+    "gh-pages": "^2.0.0"
   }
 }

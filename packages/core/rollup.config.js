@@ -1,37 +1,26 @@
 import typescript from "rollup-plugin-typescript";
+import { uglify } from "rollup-plugin-uglify";
 
 import pkg from "./package.json";
-
-const banner = `/*!
-* ${pkg.name} - v${pkg.version}
-* ${pkg.description}
-* ${pkg.homepage}
-*
-* Made by ${pkg.author}
-* Under ${pkg.license} License
-*/`;
 
 export default [
   {
     input: "./src/index.ts",
     output: [
       {
-        file: pkg.module,
-        format: "esm",
-        banner,
-      },
-      {
-        file: pkg.main,
-        format: "cjs",
-        banner,
-      },
+        file: pkg.browser,
+        format: "umd",
+        name: "occore",
+        sourcemap: true
+      }
     ],
     plugins: [
       typescript({
         typescript: require("typescript"),
+        tslib: require('tslib'),
         target: "es5"
-      })
-    ],
-    experimentalCodeSplitting: true
+      }),
+      // uglify()
+    ]
   }
 ];

@@ -1,39 +1,11 @@
 import resolve from "rollup-plugin-node-resolve";
 import commonjs from "rollup-plugin-commonjs";
 import typescript from "rollup-plugin-typescript";
+import { uglify } from "rollup-plugin-uglify";
 
 import pkg from "./package.json";
-const banner = `/*!
-* ${pkg.name} - v${pkg.version}
-* ${pkg.description}
-* ${pkg.homepage}
-*
-* Made by ${pkg.author}
-* Under ${pkg.license} License
-*/`;
 
 export default [
-  {
-    input: "./src/index.ts",
-    output: [
-      {
-        file: pkg.module,
-        format: "esm",
-        banner
-      },
-      {
-        file: pkg.main,
-        format: "cjs",
-        banner
-      }
-    ],
-    plugins: [
-      typescript({
-        typescript: require("typescript"),
-        target: "es5"
-      })
-    ]
-  },
   {
     input: "./src/index.ts",
     external: ["react"],
@@ -45,7 +17,7 @@ export default [
         globals: {
           react: "React"
         },
-        banner
+        sourcemap: true
       }
     ],
     plugins: [
@@ -54,7 +26,8 @@ export default [
         target: "es5"
       }),
       commonjs({ extensions: [".js", ".ts"] }),
-      resolve()
+      resolve(),
+      // uglify()
     ]
   }
 ];

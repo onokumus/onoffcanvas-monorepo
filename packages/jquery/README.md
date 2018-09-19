@@ -44,7 +44,7 @@ const oc = new OnoffCanvas(element, options);
 2. Include `onoffcanvas` plugin's code
   ```html
   <script src="https://unpkg.com/jquery"></script>
-  <script src="https://unpkg.com/@onoffcanvas/js"></script>
+  <script src="https://unpkg.com/@onoffcanvas/jquery"></script>
   ```
 
 3. Add class `onoffcanvas` and `id` attribute to `div` tag.

@@ -3,7 +3,6 @@
   "compilerOptions": {
     "rootDir": "src",
     "outDir": "lib/esnext",
-    "declarationDir": "lib/types",
     "jsx": "react"
   },
   "include": [

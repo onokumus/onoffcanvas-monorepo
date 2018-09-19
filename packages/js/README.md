@@ -19,9 +19,6 @@ Install with [yarn](https://yarnpkg.com):
 $ yarn add @onoffcanvas/js
 ```
 
-### Download
-[download from github](https://github.com/onokumus/onoffcanvas/archive/master.zip)
-
 ### Usage
 
 > commonjs

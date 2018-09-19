@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.cjs.json",
+    "compilerOptions": {
+      "rootDir": "src",
+      "outDir": "lib/cjs",
+      "jsx": "react"
+    },
+    "references": [
+      { "path": "../core" }
+    ],
+    "include": [
+      "src/**/*"
+    ]
+  }

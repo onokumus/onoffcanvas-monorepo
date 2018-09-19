@@ -14,7 +14,9 @@
   "esnext": "lib/esnext/index.js",
   "module": "lib/modules/index.js",
   "browser": "dist/onoffcanvas.js",
-  "types": "lib/types/index.d.ts",
+  "unpkg": "dist/onoffcanvas.min.js",
+  "jsdelivr": "dist/onoffcanvas.min.js",
+  "types": "lib/esnext/index.d.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -32,7 +34,11 @@
   },
   "scripts": {
     "clean": "rimraf dist lib src/**/{*.d.ts,*.js}",
-    "compile": "rollup -c",
+    "compile:cjs": "tsc -p tsconfig.cjs.json",
+    "compile:module": "tsc -p tsconfig.module.json",
+    "compile:umd": "npm-run-all js:umd js:minify",
+    "js:umd": "rollup -c",
+    "js:minify": "uglifyjs --compress typeofs=false --mangle --source-map \"content=dist/onoffcanvas.js.map,includeSources,url=onoffcanvas.min.js.map\" --output dist/onoffcanvas.min.js dist/onoffcanvas.js",
     "lint": "tslint -c tslint.json src/**/*.ts",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
@@ -42,7 +48,8 @@
   "homepage": "https://github.com/onokumus/onoffcanvas-monorepo#readme",
   "dependencies": {
     "@onoffcanvas/core": "^0.0.2-alpha.1",
-    "@types/node": "^10.10.1"
+    "@types/node": "^10.10.1",
+    "tslib": "^1.9.3"
   },
   "devDependencies": {
     "@types/jquery": "^3.3.8",

@@ -1,6 +1,6 @@
 {
   "name": "@onoffcanvas/jquery",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.0-alpha.1",
   "description": "onoffcanvas jQuery package",
   "keywords": [
     "offcanvas",
@@ -46,7 +46,7 @@
   },
   "homepage": "https://github.com/onokumus/onoffcanvas-monorepo#readme",
   "dependencies": {
-    "@onoffcanvas/core": "^0.1.0-alpha.0",
+    "@onoffcanvas/core": "^0.1.0-alpha.1",
     "@types/node": "^10.11.0",
     "tslib": "^1.9.3"
   },

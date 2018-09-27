@@ -17,7 +17,7 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@types/node": "^10.10.1",
+    "@types/node": "^10.11.0",
     "lerna": "^3.4.0",
     "prettier": "^1.14.2",
     "rollup": "^0.66.0",

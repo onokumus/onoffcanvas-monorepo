@@ -1,8 +1,8 @@
 import {
   ClassName,
   EventName,
-  IOCDefault,
-  OcDefault,
+  IOcOption,
+  OcOption,
   Selector
 } from "@onoffcanvas/core";
 /**
@@ -21,13 +21,13 @@ export default class OnoffCanvas {
    *
    * @constructor
    * @param {HTMLElement | string} element
-   * @param {IOCDefault} [options]
+   * @param {IOcOption} [options]
    * @memberof OnoffCanvas
    */
-  constructor(element: HTMLElement | string, options: IOCDefault) {
+  constructor(element: HTMLElement | string, options: IOcOption) {
     this.element =
       typeof element === "string" ? document.querySelector(element) : element;
-    this.config = { ...OcDefault, ...options };
+    this.config = { ...OcOption, ...options };
     this.triggerElements = document.querySelectorAll(`${
       Selector.DATA_TOGGLE
     }[href="#${this.element.id}"],

@@ -1,5 +1,5 @@
 import {
-  OcDefault,
+  OcOption,
   Selector,
   selectorArray,
   uniqueArr
@@ -12,7 +12,7 @@ import OnoffCanvas from "./index";
  * @param {boolean} [escKey]
  * @memberof OnoffCanvas
  */
-OnoffCanvas.autoinit = (options = OcDefault) => {
+OnoffCanvas.autoinit = (options = OcOption) => {
   const ocNodeList = document.querySelectorAll(`${Selector.DATA_TOGGLE}`);
   const ocListArr = [].slice.call(ocNodeList);
   const selectorArr = selectorArray(ocListArr);

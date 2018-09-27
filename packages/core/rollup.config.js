@@ -1,5 +1,4 @@
 import typescript from "rollup-plugin-typescript";
-import { uglify } from "rollup-plugin-uglify";
 
 import pkg from "./package.json";
 

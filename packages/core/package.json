@@ -51,7 +51,7 @@
   },
   "homepage": "https://github.com/onokumus/onoffcanvas-monorepo#readme",
   "dependencies": {
-    "@types/node": "^10.11.0"
+    "@types/node": "^10.11.2"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.5",

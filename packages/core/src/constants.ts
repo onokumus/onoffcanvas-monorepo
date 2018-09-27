@@ -1,20 +1,18 @@
-import { IOCDefault } from "./interface";
+import { IOcOption } from "./interface";
 
-const NAME = "onoffcanvas";
-const EVENT_KEY = `.${NAME}`;
-const EventName = {
+export const NAME = "onoffcanvas";
+export const EVENT_KEY = `.${NAME}`;
+export const EventName = {
   HIDE: `hide${EVENT_KEY}`,
   SHOW: `show${EVENT_KEY}`
 };
-const ClassName = {
+export const ClassName = {
   SHOW: "is-open"
 };
-const Selector = {
+export const Selector = {
   DATA_TOGGLE: '[data-toggle="onoffcanvas"]'
 };
-const OcDefault: IOCDefault = {
+export const OcOption: IOcOption = {
   createDrawer: true,
   hideByEsc: true
 };
-
-export { NAME, EVENT_KEY, EventName, ClassName, Selector, OcDefault };

@@ -6,6 +6,7 @@
       "allowSyntheticDefaultImports":true,
       "esModuleInterop": true,
       "noImplicitAny":false,
+      "stripInternal": true,
       "lib": [
         "dom",
         "esnext"
@@ -13,6 +14,7 @@
       "jsx": "react",
       "importHelpers": true,
       "declaration": true,
+      "emitDeclarationOnly": true,
       "composite": true,
       "baseUrl": "./packages",
       "paths": {

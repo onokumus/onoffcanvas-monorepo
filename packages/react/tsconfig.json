@@ -2,7 +2,7 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "rootDir": "src",
-    "outDir": "lib/esnext",
+    "outDir": "lib/types",
     "jsx": "react"
   },
   "include": [

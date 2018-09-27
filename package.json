@@ -7,7 +7,7 @@
     "compile:cjs": "lerna run compile:cjs",
     "compile:module": "lerna run compile:module",
     "compile:umd": "lerna run compile:umd",
-    "compile:esnext": "tsc -b packages/*",
+    "compile:types": "tsc -b packages/*",
     "css": "lerna run css",
     "clean": "lerna run --parallel  clean",
     "lint": "lerna run --parallel lint",

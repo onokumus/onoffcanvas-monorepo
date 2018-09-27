@@ -9,12 +9,11 @@
   "author": "onokumus <onokumus@gmail.com> (https://github.com/onokumus)",
   "license": "MIT",
   "main": "lib/cjs/index.js",
-  "esnext": "lib/esnext/index.js",
   "module": "lib/modules/index.js",
   "browser": "dist/onoffcanvas.js",
   "unpkg": "dist/onoffcanvas.min.js",
   "jsdelivr": "dist/onoffcanvas.min.js",
-  "types": "lib/esnext/index.d.ts",
+  "types": "lib/types/index.d.ts",
   "style": "dist/onoffcanvas.css",
   "sass": "scss/onoffcanvas.scss",
   "directories": {
